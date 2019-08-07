@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_bg">
+
+    <FrameLayout
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/kurma"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_date_palm"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_tanah"
+            android:layout_marginTop="115dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="PLANTIE"
+            android:textColor="#E5C5AF"
+            android:layout_gravity="bottom|center"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/tombol_login"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/bg_tanah"
+        android:text="Login"
+        android:textColor="#E5C5AF"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mengingat"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_tanah"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_rose4"/>
+
+        <EditText
+            android:id="@+id/userplant"
+            android:layout_width="298dp"
+            android:layout_height="50dp"
+            android:background="#9a8478"
+            android:ems="10"
+            android:hint=" Userplant"
+            android:textColor="#1e130c"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="231dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9a8478"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_vpn_key_black_24dp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="298dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_tanah"
+            android:ems="10"
+            android:hint=" Password"
+            android:textColor="#E5C5AF"
+            android:inputType="textPassword"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="279dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="347dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="10dp"
+        android:background="#9a8478"
+        android:text="guest"
+        android:textColor="#1e130c"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tombol_login"/>
+
+    <Button
+        android:id="@+id/button_tanaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#00000000"
+        android:text="Langsung Lihat Tanaman"
+        android:textAllCaps="false"
+        android:textColor="#E5C5AF"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/mengingat"
+        android:layout_width="347dp"
+        android:layout_height="40dp"
+        android:text="Remember Me"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
